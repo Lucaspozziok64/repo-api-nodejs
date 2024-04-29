@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Martin Espondola",
+    "age": 45,
+    "email": "martincito43@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/662f38474313332814b85428 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/662f3676132c520880907da8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Hector Figueroa",
+    "age": 50,
+    "email": "hectorfi6587@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/662f38474313332814b85428 HTTP/1.1
